@@ -56,7 +56,9 @@ class Album extends Component {
                 this.setSong(newSong);
                 this.play();
             
-            }
+                }
+            
+            
             
             onMouseEnter(index) {
                 this.setState({ isHovered: index });
