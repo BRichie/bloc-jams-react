@@ -27,22 +27,25 @@ class Album extends Component {
             },
             durationchange: e => {
                 this.setState({ duration: this.audioElement.duration });
-            }
+            },
+           
       };
       this.audioElement.addEventListener('timeupdate' , this.eventListeners.timeupdate);
       this.audioElement.addEventListener('durationchange' , this.eventListeners.durationchange);
+           
     }
+
 
     componentWillUnmount() {
         this.audioElement.src = null;
-        this.audioElement= null;
         this.audioElement.removeEventListener('timeupdate' , this.eventListeners.timeupdate);
         this.audioElement.removeEventListener('durationchange' , this.eventListeners.durationchange);
+       
 
     }
    
-
-        play()  {
+    
+      play()  {
             this.audioElement.play();
             this.setState({ isPlaying: true});
 
@@ -86,6 +89,24 @@ class Album extends Component {
                     this.audioElement.currentTime = newTime;
                     this.setState({ currentTime: newTime });
                 }
+               handleVolumeChange(e) {
+                   const newVolume =  e.target.value;
+                   this.audioElement.volume = newVolume;
+                   this.setState({ volume: newVolume });
+               }
+               formatTime(seconds) {
+                const sec = Math.floor(seconds);
+                const min = Math.floor(sec / 60);
+                const timeLeft = sec % 60;
+                let output = min + ':';
+                if (timeLeft < 10) {
+                    output += '0';
+             
+            }
+            output += timeLeft;
+            return output;
+
+        }  
             
             
             
@@ -133,7 +154,7 @@ class Album extends Component {
                     <tr className="song" key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.onMouseEnter( index )} onMouseLeave={() => this.onMouseLeave} >
                         <td className="song-number"> {this.hoverDisplay( song, index )} </td>
                         <td className="song-title">{song.title}  </td>
-                        <td className="song-duration">{song.duration} </td>
+                        <td className="song-duration">{this.formatTime(song.duration)} </td>
                     </tr>
                     )}
 
@@ -148,6 +169,8 @@ class Album extends Component {
                         handlePrevClick={() => this.handlePrevClick()}
                         handleNextClick={() => this.handleNextClick()}
                         handleTimeChange={(e) => this.handleTimeChange(e)}
+                        handleVolumeChange={(e) => this.handleVolumeChange(e)}
+                        formatTime={(e) => this.formatTime(e)}
                         />
             </section>
         );
