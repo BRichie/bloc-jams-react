@@ -1,0 +1,35 @@
+#album-info {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24pt;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-shadow: 
+        0 0 5px #03fa14fc,
+        0 0 10px #03fa14fc,
+        0 0 20px #03fa14fc,
+        0 0 40px #03fa14fc,
+        0 0 80px #03fa14fc,
+        0 0 90px #03fa14fc,
+        0 0 100px #03fa14fc,
+        0 0 150px #03fa14fc;
+}
+
+#song-list {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    text-transform: uppercase;
+    font-size: 24pt;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-shadow: 
+        0 0 5px #fa03f2fc,
+        0 0 10px #fa03f2fc,
+        0 0 20px #fa03f2fc,
+        0 0 40px #fa03f2fc,
+        0 0 80px #fa03f2fc,
+        0 0 90px #03fa14fc,
+        0 0 100px #03fa14fc,
+        0 0 150px #03fa14fc;
+}

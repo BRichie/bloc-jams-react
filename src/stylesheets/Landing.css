@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Exo+2|Josefin+Slab|Vibur|Righteous');
+
+
+
+
+.hero-title{
+    font-family: 'Londrina Outline', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36pt;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-shadow: 
+        0 0 5px #4ce0f0,
+        0 0 10px #4ce0f0,
+        0 0 20px #4ce0f0,
+        0 0 40px #4ce0f0,
+        0 0 80px #4ce0f0,
+        0 0 90px #4ce0f0,
+        0 0 100px #4ce0f0,
+        0 0 150px #4ce0f0;
+
+
+}
+
+
+
+
+
+
+.point-title {
+  
+        text-align:center;
+        font-size:40px;
+        font-family: "Josefin Slab";
+        margin:20px 0 20px 0;
+        color:#ffffff;
+        text-shadow: 0 0 10px #ffffff,
+                   0 0 20px  #ffffff,
+                   0 0 30px  #ffffff,
+                   0 0 40px  #228DFF,
+                   0 0 70px  #228DFF,
+                   0 0 80px  #228DFF,
+                   0 0 100px #228DFF,
+                   0 0 150px #228DFF;
+        /*Animation*/
+}
+    
+    
+
+
+.point-description {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24pt;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-shadow: 
+        0 0 5px #ff7bac,
+        0 0 10px #ff7bac,
+        0 0 20px #ff7bac,
+        0 0 40px #ff7bac,
+        0 0 80px #ff7bac,
+        0 0 90px #ff7bac,
+        0 0 100px #ff7bac,
+        0 0 150px #ff7bac;
+
+}; 
+

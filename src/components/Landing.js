@@ -1,8 +1,13 @@
 import React from 'react';
+import '.././stylesheets/Landing.css';
+
+
 
 const Landing = () => (
     <section className="landing">
+   
     <h1 className="hero-title">Turn the Music Up!</h1>
+   
 
     <section className="selling-points">
     <div className="point">
