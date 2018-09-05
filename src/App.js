@@ -31,9 +31,7 @@ class App extends Component {
           </div>
     );
     
-      <footer 
-        id="footer">
-        </footer>
+    
         
     
   }
