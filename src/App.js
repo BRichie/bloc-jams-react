@@ -19,7 +19,7 @@ class App extends Component {
             </div>
           </nav>
           <div id="text">
-  <h1 id="neon">Bl<span id="offset">oc</span> Jams</h1>
+  <h1 id="neon">Th<span id="offset">e</span> Score</h1>
 </div>
          </header>
         
